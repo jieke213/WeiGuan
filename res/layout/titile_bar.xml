@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#3333ff"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="left"
+        android:background="@drawable/login_btn_selector"
+        android:src="@drawable/wb_icon_refresh" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="北京青年" />
+    
+    <ImageView
+        android:id="@+id/write"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="right"
+        android:src="@drawable/wb_icon_write_n"
+        android:background="@drawable/login_btn_selector"
+        />
+
+</FrameLayout>

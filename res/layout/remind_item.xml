@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <ImageView
+            android:id="@+id/image_remind"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/tv_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="TextView" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right" >
+
+            <ImageView
+                android:id="@+id/image_arrow"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_gravity="right|center"
+                android:src="@drawable/remind_arrow" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:text="TextView" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

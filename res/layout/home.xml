@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_title_bar"
+        layout="@layout/titile_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.wjj.weiguan.util.RefreshableView
+            android:id="@+id/refreshable_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/lv_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0px"
+                android:background="#bbffff"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/link"
+                android:dividerHeight="8sp"
+                android:fastScrollEnabled="true"
+                android:focusable="true" >
+            </ListView>
+        </com.wjj.weiguan.util.RefreshableView>
+
+        <include
+            android:id="@+id/layout_progress"
+            layout="@layout/layout_progress" 
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/layout_bottom"
+        layout="@layout/weibo_main" />
+
+</LinearLayout>

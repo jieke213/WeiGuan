@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/content_head"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:src="@drawable/portrait" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/content_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#0000ff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/content_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ff0099"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="4dp"
+        android:text=""
+        android:textColor="#844200"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/content_image"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/layout_forward"
+            android:layout_width="0sp"
+            android:layout_height="30sp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_down"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/image_forward"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:src="@drawable/forward" />
+
+            <TextView
+                android:id="@+id/tv_forward"
+                android:layout_width="20sp"
+                android:layout_height="15sp"
+                android:gravity="center"
+                android:text="转发"
+                android:textColor="#bebebe"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_comments"
+            android:layout_width="0sp"
+            android:layout_height="30sp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_down"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/image_comments"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:src="@drawable/comments" />
+
+            <TextView
+                android:id="@+id/tv_comments"
+                android:layout_width="20sp"
+                android:layout_height="15sp"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="#bebebe"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_thumb_up"
+            android:layout_width="0sp"
+            android:layout_height="30sp"
+            android:layout_weight="1"
+            android:background="@drawable/layout_down"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/image_thumb_up"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:src="@drawable/thumb_up" />
+
+            <TextView
+                android:id="@+id/tv_thumb_up"
+                android:layout_width="20sp"
+                android:layout_height="15sp"
+                android:gravity="center"
+                android:text="点赞"
+                android:textColor="#bebebe"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
